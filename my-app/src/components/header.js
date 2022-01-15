@@ -11,7 +11,7 @@ const Header = {
                 <li><a href="/" class="px-2 text-white hover:underline">Trang chủ</a></li>
                 <li><a href="/about" class="px-2 text-white hover:underline">Tuyển sinh</a></li>
                 <li><a href="/product" class="px-2 text-white hover:underline">Chương trình đào tạo</a></li>
-                <li><a href="" class="px-2 text-white hover:underline">Góc sinh viên</a></li>
+                <li><a href="/admin/dashboard" class="px-2 text-white hover:underline">Dashboard</a></li>
                 <li><a href="/sign_up" class="px-2 text-white hover:underline">Đăng ký</a></li>
                 <li><a href="/sign_in" class="px-2 text-white hover:underline">Đăng nhập</a></li>
             </ul>

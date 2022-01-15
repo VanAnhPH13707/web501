@@ -4,8 +4,6 @@ import AboutPage from "./Pages/about";
 import ProductPage from "./Pages/product";
 import SignUpPage from "./Pages/sign_up";
 import SignInPage from "./Pages/sign_in";
-import Header from "./components/header";
-import Footer from "./components/footer";
 import DetailNewsPage from "./Pages/detailNews";
 import DashBoardPage from "./Pages/admin/dashboard";
 import AddNewsPage from "./Pages/admin/news/add";
@@ -14,9 +12,7 @@ import EditNewsPage from "./Pages/admin/news/edit";
 
 const router = new Navigo("/", { linksSelector: "a" });
 const print = (content) => {
-    // document.getElementById("header").innerHTML = Header.render();
     document.getElementById("app").innerHTML = content;
-    // document.getElementById("footer").innerHTML = Footer.render();
 };
 router.on({
     "/": () => {
@@ -49,7 +45,12 @@ router.on({
         print(AddNewsPage.render());
     },
     "/admin/news/edit": () => {
+        console.log("12");
         print(EditNewsPage.render());
+    },
+    "/admin/news/edit:id": ({ data }) => {
+        const { id } = data;
+        print(EditNewsPage.render(id));
     },
 });
 router.resolve();
