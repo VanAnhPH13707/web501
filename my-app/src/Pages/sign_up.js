@@ -1,6 +1,10 @@
+import Header from "../components/header";
+import Footer from "../components/footer";
+
 const SignUpPage = {
     render() {
         return `
+        ${Header.render()}
         <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
             <div class="max-w-md w-full space-y-8">
                 <div>
@@ -53,7 +57,8 @@ const SignUpPage = {
                     </div>
                 </form>
             </div>
-        </div>`;
+        </div>
+        ${Footer.render()}`;
     },
 };
 export default SignUpPage;
