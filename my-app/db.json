@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "Tiêu đề 2",
+      "img": "http://res.cloudinary.com/ecommercer2021/image/upload/v1644919371/nucdzvdx5t83bjip8gmb.png",
+      "desc": "abcdefgh"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "email": "anhntvph13707@fpt.edu.vn",
+      "password": "$2a$10$arWhuCW..iPZJtEbl170KOPkA18ahCKZ3EkwIYtqMAAvuUP/QXSv2",
+      "id": 1
+    }
+  ]
+}
